@@ -6,7 +6,7 @@ on:
 
 env:
   AWS_REGION: eu-west-2
-  IAM_GITHUB_ROLE_NAME: serverless-website-github
+  IAM_GITHUB_ROLE_NAME: terraform-website-github
 
 jobs:
 
