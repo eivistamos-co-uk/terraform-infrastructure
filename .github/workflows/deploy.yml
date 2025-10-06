@@ -11,6 +11,10 @@ permissions:
 env:
   AWS_REGION: eu-west-2
   IAM_GITHUB_ROLE_NAME: terraform-website-github
+  TF_VAR_bucket_name: terraform.eivistamos.co.uk
+  TF_VAR_domain_name: terraform.eivistamos.co.uk
+  TF_VAR_acm_certificate_arn: ${{ secrets.TF_VAR_acm_certificate_arn }}
+  TF_VAR_hosted_zone_id: ${{ secrets.TF_VAR_hosted_zone_id }}
 
 jobs:
 
