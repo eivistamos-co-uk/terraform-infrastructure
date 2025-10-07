@@ -127,6 +127,6 @@ jobs:
       run: |
         echo "Invalidating CloudFront cache..."
 
-        aws cloudfront create-invalidation --distribution-id "$DISTRIBUTION_ID" --paths "/*"
+        aws cloudfront create-invalidation --distribution-id "$DISTRIBUTION_ID" --region us-east-1 --paths "/*"
 
         echo "Deployment + S3 sync complete. Site live at https://${{ env.TF_VAR_domain_name }}"
