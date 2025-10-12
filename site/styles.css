@@ -1,0 +1,105 @@
+body {
+	margin: 0px;
+	height: 95vh;
+	display: flex; 
+	flex-direction: column; 
+	align-items: center; 
+	justify-content: center; 
+	text-align: center;
+	background-color: #f3faff;
+}
+
+#content {
+	margin: 0px;
+	padding: 100px;
+	display: flex; 
+	flex-direction: column; 
+	align-items: center; 
+	justify-content: center; 
+	text-align: center;
+}
+
+h1 {
+	font-size: 3.5rem;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+h1,
+h2,
+h3,
+h4,
+a {
+	font-family: "Space Mono", monospace;
+	color: #313131;
+	font-weight: bold;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	
+}
+
+.button-prio {
+	padding: 15px 25px;
+	background-color: #0c0cff;
+	border-radius: 20px;
+	border: none;
+	color: #fff;
+	font-size: 1em;
+	font-family: "Roboto", sans-serif;
+	border-style: solid;
+	border-width: 2px;
+	cursor: pointer;
+}
+
+button{
+	text-wrap-mode: nowrap;
+}
+
+.button-prio:hover {
+	background-color: #ffffff;
+	color: black;
+	font-weight: bold;
+	border-color: #0c0cff;
+	box-shadow: 3px 3px 0px #b1b1b1;
+}
+
+p,
+li {
+	font-family: "Roboto", sans-serif;
+	font-size: 1em;
+	color: #4d4d4d;
+}
+
+.spacing{
+	margin-top:20px;
+}
+
+@media (max-width: 700px) {
+	#content {
+	padding: 50px;
+}
+
+h1{
+	font-size: 3rem;
+}
+
+h2{
+	font-size: 1.25rem;
+}
+
+}
+
+@media (max-width: 400px) {
+	#content {
+	padding: 25px;
+}
+
+h1{
+	font-size: 2.5rem;
+}
+
+h2{
+	font-size: 1.1rem;
+}
+
+}
