@@ -8,3 +8,4 @@ override.tf
 override.tf.json
 .screenshots/
 *.lock.hcl
+error*
