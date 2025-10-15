@@ -28,7 +28,7 @@ Covers CI/CD pipeline, Terraform IaC deployed services, and end user path.
 ### Steps 
 
 1. In IAM, either create a single policy or separate policies for each service(recommended) to be used in the GitHub Role in the next step:
-   - See !WIP! for the policy JSON code to be referenced.
+   - See ![POLICY.md](policies/POLICY.md) for the policy JSON code to be referenced.
 2. In IAM, Create a Role for GitHub:
    - Select entity type as: Web Identity
    - Select Web Identity as: GitHub or githubusercontent.com
@@ -40,7 +40,10 @@ Covers CI/CD pipeline, Terraform IaC deployed services, and end user path.
    - AWS_ACCOUNT_ID
    - TF_VAR_HOSTED_ZONE_ID
    - TF_VAR_ACM_CERTIFICATE_ARN
-4. Review the github\workflows\deploy.yml file and update the ENV variables for your requirements:
+4. Review the github\workflows\deploy.yml and backend.tf files and update the ENV variables for your requirements:
+
+deploy.yml
+
    - AWS_REGION
    - IAM_GITHUB_ROLE_NAME
    - TF_VAR_bucket_name
@@ -48,6 +51,14 @@ Covers CI/CD pipeline, Terraform IaC deployed services, and end user path.
    - TF_BACKEND_BUCKET
    - TF_BACKEND_KEY
    - TF_BACKEND_TABLE
+
+backend.tf
+
+   - bucket
+   - key
+   - region
+   - dynamodb_table
+   
 5. Update the HTML and CSS files within the site folder to your liking.
 6. Add, Commit, and Push code.
 7. GitHub Actions will build & deploy the website. 
