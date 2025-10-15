@@ -28,7 +28,7 @@ Covers CI/CD pipeline, Terraform IaC deployed services, and end user path.
 ### Steps 
 
 1. In IAM, either create a single policy or separate policies for each service(recommended) to be used in the GitHub Role in the next step:
-   - See ![POLICY.md](policies/POLICY.md) for the policy JSON code to be referenced.
+   - See [POLICY.md](policies/POLICY.md) for the policy JSON code to be referenced.
 2. In IAM, Create a Role for GitHub:
    - Select entity type as: Web Identity
    - Select Web Identity as: GitHub or githubusercontent.com
